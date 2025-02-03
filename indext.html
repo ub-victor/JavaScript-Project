@@ -1,26 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>JavaScriptProject All in one</title>
-</head>
-<body>
-    <form action="">
-        Value 1: <input type="text" id="value1">
-        Value 2: <input type="text" id="value2"> 
-        Operator: <select id="operator">
-            <option value="add">Add</option>
-            <option value="min">Min</option>
-            <option value="div">Div</option>
-            <option value="mul">Multiply</option>
-        </select>
-        <button type="button" onclick="calc()">Calculate</button>
-    </form>
 
-    <div id="result"></div>
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="styles.css">  
+    <title>Calculator using JavaScript</title>  
+</head>  
+<body>  
+    <div class="container">  
+        <h1>Simple Calculator</h1>  
+        <form id="calculator">  
+            <label for="value1">Value 1:</label>  
+            <input type="text" id="value1" required>  
+            <label for="value2">Value 2:</label>  
+            <input type="text" id="value2" required>   
+            <label for="operator">Operator:</label>  
+            <select id="operator">  
+                <option value="add">Add</option>  
+                <option value="min">Subtract</option>  
+                <option value="div">Divide</option>  
+                <option value="mul">Multiply</option>  
+            </select>  
+            <button type="button" onclick="calc()">Calculate</button>  
+        </form>  
 
-</body>
-<script src="main.js"></script>
+        <div id="result" class="result"></div>  
+
+        <div class="card">  
+            <img src="img/card-visite" alt="About Me" class="card-image">  
+            <p>Learn more about me on my GitHub and Netlify pages!</p>  
+        </div>  
+    </div>  
+
+    <footer>  
+        <p>&copy; Victoria - All Rights Reserved. Visit my <a href="https://github.com/ub-victor" target="_blank">GitHub</a> and <a href="https://app.netlify.com/teams/ub-victor/sites" target="_blank">Netlify</a>.</p>  
+    </footer>  
+
+    <script src="main.js"></script>  
+</body>  
 </html>
