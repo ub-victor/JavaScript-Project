@@ -54,21 +54,17 @@ button:hover {
 
 .card {  
     margin-top: 30px;  
-    text-align: center; 
-    
+    text-align: center;  
 }  
 
-.card:hover .card-image {  
-    width: 80%; /* Resizes the image to 80% on hover */  
-    transition: width 0.3s ease; /* Adds smoothness to the transition */  
-}
-
 .card-image {  
-    max-width: 100%; /* Adjusts image to fit the container */  
-    max-height: 100vh; /* Limits the height to the viewport height */  
-    object-fit: cover; /* Maintains aspect ratio while filling the box */  
-    display: block; /* Prevents inline spacing */  
-} 
+    max-width: 100%; /* Allows image to be responsive */  
+    height: auto; /* Maintain aspect ratio */  
+    border-radius: 8px; /* Rounded corners */  
+    width: 100%; /* Take full width of the card but scaled to its container */  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for depth */  
+    margin: 10px 0; /* Margins above and below the image */  
+}
 
 footer {  
     text-align: center;  
