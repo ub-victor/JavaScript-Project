@@ -54,14 +54,21 @@ button:hover {
 
 .card {  
     margin-top: 30px;  
-    text-align: center;  
+    text-align: center; 
+    
 }  
 
+.card:hover .card-image {  
+    width: 80%; /* Resizes the image to 80% on hover */  
+    transition: width 0.3s ease; /* Adds smoothness to the transition */  
+}
+
 .card-image {  
-    max-width: 100%;  
-    height: auto;  
-    border-radius: 8px;  
-}  
+    max-width: 100%; /* Adjusts image to fit the container */  
+    max-height: 100vh; /* Limits the height to the viewport height */  
+    object-fit: cover; /* Maintains aspect ratio while filling the box */  
+    display: block; /* Prevents inline spacing */  
+} 
 
 footer {  
     text-align: center;  
