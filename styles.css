@@ -72,7 +72,7 @@ footer {
     padding: 10px;  
     background: #333;  
     color: white;  
-    border-radius: 0 0 8px 8px;  
+    border-radius: 8px 8px 0 0;  
 }  
 
 footer a {  
